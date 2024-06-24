@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header role="banner">
+      <div
+        class="animation text"
+        tabindex="0"
+        style="font-family: fantasy"
+        id="name"
+        title="name"
+      >
+        Sanidh Idicula <span aria-hidden="true">🌴🥥</span> Varghese
+      </div>
+      <!-- <div class="animation shadow">Sanidh Idicula 🌴🥥 Varghese</div> -->
+      <nav role="navigation">
+        <ul role="menubar" tabindex="0" aria-expanded="true">
+          <li>
+            <a
+              href="#about"
+              aria-label="about"
+              id="about-link"
+              title="about-link"
+              tabindex="0"
+              >About Me</a
+            >
+          </li>
+          <li>
+            <a
+              href="#skills"
+              aria-label="software skills"
+              id="skills-link"
+              title="skills-link"
+              tabindex="0"
+              >Software Skills</a
+            >
+          </li>
+          <li>
+            <a
+              href="projects.html"
+              aria-label="projects"
+              id="projects-link"
+              title="projects-link"
+              tabindex="0"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              aria-label="contact"
+              id="contact-link"
+              title="contact-link"
+              tabindex="0"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <section id="about" role="about">
+        <h2 tabindex="0" id="about" title="about">About Me</h2>
+        <p tabindex="0">
+          I am a junior software developer currently working at Polus Solutions
+          in Trivandrum, Kerala. I pursued my higher education in B.Tech in
+          Computer Science from Mar Baselios College in Trivandum. I also did my
+          major schooling in 10th and 12th from St. Thomas Central School from
+          Trivandrum.
+          <br /><br />
+          I have an interest in Web/Mobile Development & Cloud Computing after
+          working on a few apps in React and Flutter for web and mobile
+          respectively & did a few basic cloud websites, APIs & Lambda functions
+          (Python) on AWS for an internship. The major languages I have used are
+          C, Python, JavaScript, HTML/CSS & Dart.
+          <br /><br />
+          I like participating in hackathons & quizzes. I also like reading
+          audiobooks.
+        </p>
+      </section>
+
+      <section id="skills" role="skills">
+        <h2 tabindex="0" id="skills" title="skills">Software Skills</h2>
+        <ul class="skills" tabindex="0" aria-expanded="true">
+          <li><img src="assets/c.png" alt="C" aria-label="C" /></li>
+          <li>
+            <img src="assets/python.png" alt="Python" aria-label="Python" />
+          </li>
+          <li>
+            <img src="assets/js.png" alt="JavaScript" aria-label="JavaScript" />
+          </li>
+          <li>
+            <img
+              style="width: 100px"
+              src="assets/sql-cut.png"
+              alt="SQL"
+              aria-label="SQL"
+            />
+          </li>
+          <!-- Add more skills -->
+        </ul>
+      </section>
+    </main>
+    <footer role="contentinfo" tabindex="0">
+      <p>&copy; 2024 San1dh</p>
+    </footer>
+  </body>
+</html>

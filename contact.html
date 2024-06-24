@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header role="banner">
+      <div
+        class="animation text"
+        tabindex="0"
+        style="font-family: fantasy"
+        id="name"
+        title="name"
+      >
+        Sanidh Idicula <span aria-hidden="true">🌴🥥</span> Varghese
+      </div>
+      <!-- <div class="animation shadow">Sanidh Idicula 🌴🥥 Varghese</div> -->
+      <nav role="navigation">
+        <ul role="menubar" tabindex="0" aria-expanded="true">
+          <li>
+            <a
+              href="main.html#about"
+              aria-label="about"
+              id="about-link"
+              title="about-link"
+              tabindex="0"
+              >About Me</a
+            >
+          </li>
+          <li>
+            <a
+              href="main.html#skills"
+              aria-label="software skills"
+              id="skills-link"
+              title="skills-link"
+              tabindex="0"
+              >Software Skills</a
+            >
+          </li>
+          <li>
+            <a
+              href="projects.html"
+              aria-label="projects"
+              id="projects-link"
+              title="projects-link"
+              tabindex="0"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              aria-label="contact"
+              id="contact-link"
+              title="contact-link"
+              tabindex="0"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <!-- <a href="main.html" aria-label="Go Back Home" tabindex="0" class="back"
+        >Go Back Home</a
+      > -->
+      <section id="contact" role="contact">
+        <h2 tabindex="0" id="contact" title="contact">Contact</h2>
+        <p tabindex="0">Email: san1dh@proton.me</p>
+        <p tabindex="0">Phone: +91 123 456 7890</p>
+        <!-- Add more contact information -->
+        <form action="" id="myForm">
+          <h4 tabindex="0">Send a Message</h4>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="name"
+            role="name"
+            aria-label="name"
+            tabindex="0"
+          />
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="email"
+            role="email"
+            aria-label="email"
+            tabindex="0"
+          />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Enter message"
+            role="message"
+            aria-label="Enter message"
+            tabindex="0"
+          ></textarea>
+          <input
+            type="button"
+            value="Submit"
+            role="submit"
+            aria-label="submit"
+            id="submit"
+            title="submit"
+            onclick="submitForm()"
+            tabindex="0"
+          />
+        </form>
+      </section>
+    </main>
+
+    <footer role="contentinfo" tabindex="0">
+      <p>&copy; San1dh 2024</p>
+    </footer>
+
+    <script>
+      function submitForm() {
+        // Retrieve input values
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        // Construct message to display
+        var alertMessage = "Name: " + name + "\n";
+        alertMessage += "Email: " + email + "\n";
+        alertMessage += "Message: " + message;
+
+        // Display message in alert
+        alert(alertMessage);
+
+        document.getElementById("myForm").reset();
+      }
+    </script>
+  </body>
+</html>
