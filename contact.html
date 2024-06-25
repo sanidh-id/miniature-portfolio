@@ -138,4 +138,14 @@
       }
     </script>
   </body>
+  <script>
+    // console.log(localStorage.getItem("status"));
+    if (localStorage.getItem("status") === "verified") {
+      // alert("Success");
+      // return true;
+    } else {
+      alert("Please login 🙏");
+      location.href = "night.html";
+    }
+  </script>
 </html>
