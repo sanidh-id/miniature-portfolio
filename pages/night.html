@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Night Login</title>
-    <link rel="stylesheet" href="night-style.css" />
+    <link rel="stylesheet" href="../styles/night-style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -65,12 +65,12 @@
       ["sanidh", "1234"],
     ];
     // console.log(users[0]);
-    localStorage.setItem("user", JSON.stringify(users));
-    const userData = JSON.parse(localStorage.getItem("user"));
+    localStorage.setItem("users", JSON.stringify(users));
+    const userData = JSON.parse(localStorage.getItem("users"));
     // console.log(userData);
 
     function check(form) {
-      var flag = false;
+      let flag = false;
 
       for (let i = 0; i < userData.length; i++) {
         // console.log(userData[i]);
@@ -80,6 +80,7 @@
         ) {
           flag = true;
           alert("Correct 👍");
+          localStorage.setItem("current-user", userData[i][0]);
           location.href =
             "main.html";
             localStorage.setItem("status", "verified");

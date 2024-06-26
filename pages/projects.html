@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Page</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Projects Page</title>
+    <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
     <header role="banner">
@@ -42,7 +42,7 @@
           </li>
           <li>
             <a
-              href="projects.html"
+              href="#"
               aria-label="projects"
               id="projects-link"
               title="projects-link"
@@ -52,7 +52,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="contact.html"
               aria-label="contact"
               id="contact-link"
               title="contact-link"
@@ -68,75 +68,39 @@
       <!-- <a href="main.html" aria-label="Go Back Home" tabindex="0" class="back"
         >Go Back Home</a
       > -->
-      <section id="contact" role="contact">
-        <h2 tabindex="0" id="contact" title="contact">Contact</h2>
-        <p tabindex="0">Email: san1dh@proton.me</p>
-        <p tabindex="0">Phone: +91 123 456 7890</p>
-        <!-- Add more contact information -->
-        <form action="" id="myForm">
-          <h4 tabindex="0">Send a Message</h4>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="name"
-            role="name"
-            aria-label="name"
-            tabindex="0"
-          />
-          <input
-            type="text"
-            name="email"
-            id="email"
-            placeholder="email"
-            role="email"
-            aria-label="email"
-            tabindex="0"
-          />
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Enter message"
-            role="message"
-            aria-label="Enter message"
-            tabindex="0"
-          ></textarea>
-          <input
-            type="button"
-            value="Submit"
-            role="submit"
-            aria-label="submit"
-            id="submit"
-            title="submit"
-            onclick="submitForm()"
-            tabindex="0"
-          />
-        </form>
+      <section id="projects" role="projects">
+        <h2 tabindex="0" id="projects" title="projects">Projects</h2>
+        <div class="project">
+          <h3 tabindex="0">Employee Assessment Web App</h3>
+          <p tabindex="0">
+            A prototype I created with a team for an internship at Nissan
+            Digital based on an excel sheet of questions for each department.
+            Users can enter once and answer questions about themselves & get a
+            score. Supervisors can verify it. An admin can manage all details.
+          </p>
+          <p tabindex="0">
+            <b>Technologies Used:</b> HTML, CSS, JavaScript, React, Express.js,
+            MySQL
+          </p>
+          <br />
+          <h3 tabindex="0">Collevo: College Activity Points Management App</h3>
+          <p tabindex="0">
+            A web & mobile application for teachers & students so students can
+            easily upload certificates for college activities & teachers can
+            easily verify and award points. An admin can upload all the details
+            for teachers & students.
+          </p>
+          <p tabindex="0">
+            <b>Technologies Used:</b> Flutter, Firebase, Python
+          </p>
+        </div>
+        <!-- Add more project entries as needed -->
       </section>
     </main>
 
     <footer role="contentinfo" tabindex="0">
-      <p>&copy; San1dh 2024</p>
+      <p>&copy; 2024 San1dh</p>
     </footer>
-
-    <script>
-      function submitForm() {
-        // Retrieve input values
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var message = document.getElementById("message").value;
-
-        // Construct message to display
-        var alertMessage = "Name: " + name + "\n";
-        alertMessage += "Email: " + email + "\n";
-        alertMessage += "Message: " + message;
-
-        // Display message in alert
-        alert(alertMessage);
-
-        document.getElementById("myForm").reset();
-      }
-    </script>
   </body>
   <script>
     // console.log(localStorage.getItem("status"));

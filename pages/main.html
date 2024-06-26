@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
     <header role="banner">
@@ -65,6 +65,7 @@
     </header>
 
     <main role="main">
+      <span class="user-heading" id="current-user">Hi</span>
       <section id="about" role="about">
         <h2 tabindex="0" id="about" title="about">About Me</h2>
         <p tabindex="0">
@@ -88,17 +89,17 @@
       <section id="skills" role="skills">
         <h2 tabindex="0" id="skills" title="skills">Software Skills</h2>
         <ul class="skills" tabindex="0" aria-expanded="true">
-          <li><img src="assets/c.png" alt="C" aria-label="C" /></li>
+          <li><img src="../assets/c.png" alt="C" aria-label="C" /></li>
           <li>
-            <img src="assets/python.png" alt="Python" aria-label="Python" />
+            <img src="../assets/python.png" alt="Python" aria-label="Python" />
           </li>
           <li>
-            <img src="assets/js.png" alt="JavaScript" aria-label="JavaScript" />
+            <img src="../assets/js.png" alt="JavaScript" aria-label="JavaScript" />
           </li>
           <li>
             <img
               style="width: 100px"
-              src="assets/sql-cut.png"
+              src="../assets/sql-cut.png"
               alt="SQL"
               aria-label="SQL"
             />
@@ -112,6 +113,12 @@
     </footer>
   </body>
   <script>
+    function capitalize(string) {
+      return string.charAt(0).toUpperCase() + string.substring(1);
+    }
+    let user = localStorage.getItem("current-user");
+    document.getElementById("current-user").innerHTML = "Hi " + capitalize(user) + "!";
+
     // console.log(localStorage.getItem("status"));
     if (localStorage.getItem("status") === "verified") {
       // alert("Success");

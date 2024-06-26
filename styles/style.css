@@ -100,6 +100,14 @@ nav ul li a {
 
 nav ul li a:hover { text-decoration: underline; }
 
+.user-heading { 
+  color: yellowgreen;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 2em;
+}
+
 /* Main content styling */
 main {
   margin: 20px;
@@ -112,7 +120,10 @@ main {
   z-index: 900; /* Ensure main content is above background */
 }
 
-section { margin-bottom: 40px; }
+section { 
+  margin-top: 10px;
+  margin-bottom: 40px; 
+}
 
 h2 {
   margin-bottom: 20px;
@@ -181,6 +192,8 @@ textarea {
 #submit {
   background-color: #00b4d8;
   border-radius: 10px;
+  padding: 4px;
+  font-size: 1.2em;
 }
 
 
