@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap);
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url("night.jpg") no-repeat;
+  background: url(night.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -20,9 +20,9 @@ body {
 .wrapper {
   width: 420px;
   background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, .2);
   backdrop-filter: blur(4px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
   color: #fff;
   border-radius: 10px;
   padding: 30px 40px;
@@ -46,16 +46,14 @@ body {
   background: transparent;
   border: none;
   outline: none;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, .2);
   border-radius: 40px;
   font-size: 16px;
   padding: 20px 45px 20px 20px;
   color: #fff;
 }
 
-.input-box input::placeholder {
-  color: #fff;
-}
+.input-box input::placeholder { color: #fff; }
 
 .input-box i {
   position: absolute;
@@ -82,9 +80,7 @@ body {
   text-decoration: none;
 }
 
-.remember-forget a:hover {
-  text-decoration: underline;
-}
+.remember-forget a:hover { text-decoration: underline; }
 
 .wrapper .btn {
   width: 100%;
@@ -93,7 +89,7 @@ body {
   border: none;
   outline: none;
   border-radius: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
   cursor: pointer;
   font-size: 16px;
   color: #333;
@@ -112,6 +108,4 @@ body {
   font-weight: 600;
 }
 
-.register-link p a:hover {
-  text-decoration: underline;
-}
+.register-link p a:hover { text-decoration: underline; }

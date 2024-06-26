@@ -1,10 +1,10 @@
 /* Reset default margin and padding */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap);
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* body {
@@ -30,7 +30,6 @@
   background-size: 60% 200%;
   animation: animate 10s linear infinite;
 }
-
 /* background-size is important for this animation */
 
 @keyframes animate {
@@ -58,7 +57,7 @@
 
 /* Basic styling for body */
 body {
-  font-family: "Arial", sans-serif;
+  font-family: 'Arial', sans-serif;
   line-height: 1.6;
   background-color: #000; /* Black background */
   color: #fff; /* White text */
@@ -74,7 +73,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
   position: relative;
   z-index: 1000; /* Ensure header is on top of background */
 }
@@ -90,41 +89,30 @@ nav ul {
   margin-left: 800px; /* Adjust to push menu items to the right */
 }
 
-nav ul li {
-  margin-right: 20px;
-}
+nav ul li { margin-right: 20px; }
 
 nav ul li a {
   text-decoration: none;
   color: #fff;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
   padding: 10px;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
-}
+nav ul li a:hover { text-decoration: underline; }
 
 /* Main content styling */
 main {
   margin: 20px;
   padding: 20px 40px;
-  background-color: rgba(
-    32,
-    32,
-    32,
-    0.9
-  ); /* Semi-transparent black background */
+  background-color: rgba(32, 32, 32, .9); /* Semi-transparent black background */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
   margin-top: 20px; /* Adjust as needed */
   position: relative;
   z-index: 900; /* Ensure main content is above background */
 }
 
-section {
-  margin-bottom: 40px;
-}
+section { margin-bottom: 40px; }
 
 h2 {
   margin-bottom: 20px;
@@ -137,7 +125,7 @@ h2 {
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #333; /* Dark gray background */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
 }
 
 .project h3 {
@@ -146,13 +134,9 @@ h2 {
   color: #fff;
 }
 
-.project p {
-  color: #ccc;
-}
+.project p { color: #ccc; }
 
-b {
-  color: rgb(150, 105, 105);
-}
+b { color: rgb(150, 105, 105); }
 
 img {
   width: 60px; /* Fix missing units */
@@ -166,9 +150,7 @@ img {
   flex-direction: row;
 }
 
-.skills li {
-  padding: 10px;
-}
+.skills li { padding: 10px; }
 
 /* Footer styling */
 footer {
@@ -187,29 +169,25 @@ form {
   margin-top: 20px;
 }
 
-input {
-  margin: 4px;
-}
+input { margin: 4px; }
 
 textarea {
   margin: 4px;
   height: 80px;
 }
 
-.back {
-  color: white;
-}
+.back { color: white; }
 
 #submit {
   background-color: #00b4d8;
   border-radius: 10px;
 }
 
+
 /* Responsive Design */
 @media (max-width: 1200px) {
-  header {
-    margin-top: -60px;
-  }
+
+  header { margin-top: -60px; }
 
   nav ul {
     flex-direction: row;
@@ -217,13 +195,13 @@ textarea {
     margin-left: 0;
     margin-top: 120px; /* Adjust margin */
   }
+
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  header {
-    margin-top: -120px;
-  }
+
+  header { margin-top: -120px; }
 
   nav ul {
     flex-direction: column;
@@ -231,4 +209,5 @@ textarea {
     margin-left: 0;
     margin-top: 240px; /* Adjust margin */
   }
+
 }
