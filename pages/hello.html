@@ -9,13 +9,15 @@
     Sample
 </body>
 <script>
-    // console.log(localStorage.getItem("status"));
-    if (localStorage.getItem("status") === "verified") {
-      // alert("Success");
-      // return true;
-    } else {
-      alert("Please login 🙏");
-      location.href = "night.html";
+    window.onload = function checkLogin() {
+      // console.log(localStorage.getItem("status"));
+      if (localStorage.getItem("status") === true) {
+        // alert("Success");
+        // return true;
+      } else {
+        alert("Please login 🙏");
+        location.href = "night.html";
+      }
     }
   </script>
 </html>

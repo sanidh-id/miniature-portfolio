@@ -94,11 +94,15 @@
             <img src="../assets/python.png" alt="Python" aria-label="Python" />
           </li>
           <li>
-            <img src="../assets/js.png" alt="JavaScript" aria-label="JavaScript" />
+            <img
+              src="../assets/js.png"
+              alt="JavaScript"
+              aria-label="JavaScript"
+            />
           </li>
           <li>
             <img
-              style="width: 120px; height: 56px;"
+              style="width: 120px; height: 56px"
               src="../assets/sql-cut.png"
               alt="SQL"
               aria-label="SQL"
@@ -113,19 +117,23 @@
     </footer>
   </body>
   <script>
+    window.onload = function checkLogin() {
+      // console.log(localStorage.getItem("status"));
+      if (localStorage.getItem("status") === true) {
+        // alert("Success");
+        // return true;
+      } else {
+        alert("Please login 🙏");
+        location.href = "night.html";
+      }
+    }
+
     function capitalize(string) {
       return string.charAt(0).toUpperCase() + string.substring(1);
     }
-    let user = localStorage.getItem("current-user");
-    document.getElementById("current-user").innerHTML = "Hi " + capitalize(user) + "!";
 
-    // console.log(localStorage.getItem("status"));
-    if (localStorage.getItem("status") === "verified") {
-      // alert("Success");
-      // return true;
-    } else {
-      alert("Please login 🙏");
-      location.href = "night.html";
-    }
+    let user = localStorage.getItem("current-user");
+    document.getElementById("current-user").innerHTML =
+      "Hi " + capitalize(user) + "!";
   </script>
 </html>
