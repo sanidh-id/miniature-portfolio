@@ -1,4 +1,3 @@
-
 function submitForm() {
   // Retrieve input values
   var name = document.getElementById("name").value;
