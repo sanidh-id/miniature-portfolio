@@ -104,9 +104,10 @@ nav ul li a {
 nav ul li a:hover { text-decoration: underline; }
 
 .user-heading { 
-  border: 2px solid whitesmoke;
+  background-color: white;
+  /* border: 2px solid whitesmoke; */
   border-radius: 10px;
-  color: yellowgreen;
+  color: black;
   font-size: 2em;
   padding: 10px;
 }
@@ -193,8 +194,10 @@ textarea {
 .back { color: white; }
 
 #submit {
-  background-color: #00b4d8;
+  background-color: green;
   border-radius: 10px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.2em;
   padding: 4px;
 }
