@@ -11,7 +11,6 @@ window.onload = function setData() {
   localStorage.setItem("users", JSON.stringify(users));
 };
 
-
 function check(form) {
   let flag = "false";
 
