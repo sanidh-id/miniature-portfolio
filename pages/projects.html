@@ -12,15 +12,15 @@
         class="animation text"
         tabindex="0"
         style="font-family: fantasy"
-        id="name"
-        title="name"
+        id="my-name"
+        title="my-name"
       >
         Sanidh Idicula <span aria-hidden="true">🌴🥥</span> Varghese
       </div>
       <!-- <div class="animation shadow">Sanidh Idicula 🌴🥥 Varghese</div> -->
       <nav role="navigation">
-        <ul role="menubar" tabindex="0" aria-expanded="true">
-          <li>
+        <ul role="menubar" tabindex="0" aria-expanded="true" id="nav-bar">
+          <li id="about-link">
             <a
               href="main.html#about"
               aria-label="about"
@@ -30,7 +30,7 @@
               >About Me</a
             >
           </li>
-          <li>
+          <li id="skills-link">
             <a
               href="main.html#skills"
               aria-label="software skills"
@@ -40,7 +40,7 @@
               >Software Skills</a
             >
           </li>
-          <li>
+          <li id="projects-link">
             <a
               href="#"
               aria-label="projects"
@@ -50,7 +50,7 @@
               >Projects</a
             >
           </li>
-          <li>
+          <li id="contact-link">
             <a
               href="contact.html"
               aria-label="contact"
@@ -70,27 +70,27 @@
       > -->
       <section id="projects" role="projects">
         <h2 tabindex="0" id="projects" title="projects">Projects</h2>
-        <div class="project">
-          <h3 tabindex="0">Employee Assessment Web App</h3>
-          <p tabindex="0">
+        <div class="project" id="projects">
+          <h3 tabindex="0" id="project-1-title">Employee Assessment Web App</h3>
+          <p tabindex="0" id="project-1-body">
             A prototype I created with a team for an internship at Nissan
             Digital based on an excel sheet of questions for each department.
             Users can enter once and answer questions about themselves & get a
             score. Supervisors can verify it. An admin can manage all details.
           </p>
-          <p tabindex="0">
+          <p tabindex="0" id="project-1-tech">
             <b>Technologies Used:</b> HTML, CSS, JavaScript, React, Express.js,
             MySQL
           </p>
           <br />
-          <h3 tabindex="0">Collevo: College Activity Points Management App</h3>
-          <p tabindex="0">
+          <h3 tabindex="0" id="project-2-title">Collevo: College Activity Points Management App</h3>
+          <p tabindex="0" id="project-2-body">
             A web & mobile application for teachers & students so students can
             easily upload certificates for college activities & teachers can
             easily verify and award points. An admin can upload all the details
             for teachers & students.
           </p>
-          <p tabindex="0">
+          <p tabindex="0" id="project-1-tech">
             <b>Technologies Used:</b> Flutter, Firebase, Python
           </p>
         </div>

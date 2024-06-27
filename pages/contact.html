@@ -12,15 +12,15 @@
         class="animation text"
         tabindex="0"
         style="font-family: fantasy"
-        id="name"
-        title="name"
+        id="my-name"
+        title="my-name"
       >
         Sanidh Idicula <span aria-hidden="true">🌴🥥</span> Varghese
       </div>
       <!-- <div class="animation shadow">Sanidh Idicula 🌴🥥 Varghese</div> -->
       <nav role="navigation">
-        <ul role="menubar" tabindex="0" aria-expanded="true">
-          <li>
+        <ul role="menubar" tabindex="0" aria-expanded="true" id="nav-bar">
+          <li id="about-link">
             <a
               href="main.html#about"
               aria-label="about"
@@ -30,7 +30,7 @@
               >About Me</a
             >
           </li>
-          <li>
+          <li id="skills-link">
             <a
               href="main.html#skills"
               aria-label="software skills"
@@ -40,7 +40,7 @@
               >Software Skills</a
             >
           </li>
-          <li>
+          <li id="projects-link">
             <a
               href="projects.html"
               aria-label="projects"
@@ -50,7 +50,7 @@
               >Projects</a
             >
           </li>
-          <li>
+          <li id="contact-link">
             <a
               href="#"
               aria-label="contact"
@@ -69,12 +69,12 @@
         >Go Back Home</a
       > -->
       <section id="contact" role="contact">
-        <h2 tabindex="0" id="contact" title="contact">Contact</h2>
-        <p tabindex="0">Email: san1dh@proton.me</p>
-        <p tabindex="0">Phone: +91 123 456 7890</p>
+        <h2 tabindex="0" id="contact-header" title="contact-header">Contact</h2>
+        <p tabindex="0" id="my-email">Email: san1dh@proton.me</p>
+        <p tabindex="0" id="my-phone">Phone: +91 123 456 7890</p>
         <!-- Add more contact information -->
         <form action="" id="myForm">
-          <h4 tabindex="0">Send a Message</h4>
+          <h4 tabindex="0" id="form-title">Send a Message</h4>
           <input
             type="text"
             name="name"
