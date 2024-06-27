@@ -4,6 +4,11 @@ function submitForm() {
   var email = document.getElementById("email").value;
   var message = document.getElementById("message").value;
 
+  if (name === "" || email === "" || message === "") {
+    alert("Please enter a valid name/email/message🙏");
+    return;
+  }
+
   // Construct message to display
   var alertMessage = "Name: " + name + "\n";
   alertMessage += "Email: " + email + "\n";
