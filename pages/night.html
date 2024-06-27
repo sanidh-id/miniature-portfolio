@@ -39,19 +39,19 @@
           <i class="bx bxs-lock-alt"></i>
         </div>
 
-        <div class="remember-forget">
+        <!-- <div class="remember-forget">
           <label><input type="checkbox" id="checkbox" />Remember me</label>
           <br />
           <a href="#">Forgot password?</a>
-        </div>
+        </div> -->
 
         <button type="button" class="btn" onclick="check(this.form)">
           Login
         </button>
 
-        <div class="register-link">
+        <!-- <div class="register-link">
           <p>Don't have an account? <a href="#">Register</a></p>
-        </div>
+        </div> -->
       </form>
     </div>
   </body>
@@ -75,6 +75,10 @@
       const userData = JSON.parse(localStorage.getItem("users"));
       // console.log(userData);
 
+      if (form.user.value === "" || form.password.value === "") {
+        alert("Please enter a valid username/password 🙏");
+        return;
+      }
       for (let i = 0; i < userData.length; i++) {
         // console.log(userData[i]);
         if (
