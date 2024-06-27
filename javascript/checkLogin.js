@@ -1,8 +1,8 @@
 window.onload = function checkLogin() {
-  // console.log(localStorage.getItem("status"));
+  // console.log('localStorage-status: ',localStorage.getItem("status"));
   if (localStorage.getItem("status") === "true") {
     // alert("Success");
-    // return true;
+    return;
   } else {
     alert("Please login 🙏");
     location.href = "login.html";

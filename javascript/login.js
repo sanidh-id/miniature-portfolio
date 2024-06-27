@@ -1,13 +1,12 @@
 window.onload = function setData() {
   // window.localStorage.setItem("name", "sanidh");
   // window.localStorage.setItem("password", "1234");
-  // console.log(window.localStorage.getItem("name"));
+  // console.log('localStorage-name: 'window.localStorage.getItem("name"));
 
   var users = [
     ["abin", "5678"],
     ["sanidh", "1234"],
   ];
-  // console.log(users[0]);
   localStorage.setItem("users", JSON.stringify(users));
 };
 
@@ -15,14 +14,14 @@ function check(form) {
   let flag = "false";
 
   const userData = JSON.parse(localStorage.getItem("users"));
-  // console.log(userData);
+  console.log('localStorage-userData: ', userData);
 
   if (form.user.value === "" || form.password.value === "") {
     alert("Please enter a valid username/password 🙏");
     return;
   }
   for (let i = 0; i < userData.length; i++) {
-    // console.log(userData[i]);
+    // console.log('localStorage-userData[i]: ', userData[i]);
     if (
       form.user.value == userData[i][0] &&
       form.password.value == userData[i][1]
