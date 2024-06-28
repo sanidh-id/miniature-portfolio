@@ -73,7 +73,7 @@ header {
   color: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 30px 40px;
+  padding: 40px 40px 20px 40px;
   margin-top: -40px;
   margin-left: 0;
   /* position: relative;  */
@@ -125,7 +125,7 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
   margin: 20px;
   /* margin-top: 20px;  */
-  padding: 90px 40px;
+  padding: 100px 40px;
   position: relative;
   z-index: 900; /* Ensure main content is above background */
 }
