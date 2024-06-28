@@ -139,6 +139,7 @@ h2 {
   color: #fff;
   font-size: 2rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .project {
@@ -169,6 +170,7 @@ img {
   flex-direction: row;
   list-style: none;
   margin: 20px;
+  justify-content: center;
 }
 
 .skills li { padding: 10px; }
@@ -183,11 +185,38 @@ footer {
   text-align: center;
 }
 
+#main-contact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#contact{
+  border: 2px solid white;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 50%;
+}
+
+.contact-side1{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.addimage img {
+  height: 100%;
+  width: 95%;
+  border-radius: 40px;
+  margin: 30px;
+}
 form {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  max-width: 40%;
 }
 
 input { margin: 4px; }
