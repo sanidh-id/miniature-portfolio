@@ -73,12 +73,13 @@ header {
   color: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 25px 20px;
-  margin-top: -20px;
-  margin-left: 20px;
+  padding: 30px 40px;
+  margin-top: -40px;
+  margin-left: 0;
   /* position: relative;  */
   position: fixed;
   z-index: 1000; /* Ensure header is on top of background */
+  width: 100%;
 }
 
 header h1 {
@@ -89,7 +90,12 @@ header h1 {
 nav ul {
   display: flex;
   list-style-type: none;
-  margin-left: 780px; /* Adjust to push menu items to the right */
+  margin-left: 700px; /* Adjust to push menu items to the right */
+}
+
+header img {
+  height: 100%;
+  width: 40px;
 }
 
 nav ul li { margin-right: 20px; }

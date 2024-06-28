@@ -5,5 +5,5 @@ function capitalize(string) {
 window.onload = function setUser() {
   let user = localStorage.getItem("current-user");
   document.getElementById("current-user").innerHTML =
-    "Hi " + capitalize(user) + "!";
+    "Hi " + capitalize(user) + "👋 !";
 };
