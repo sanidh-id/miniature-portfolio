@@ -2,11 +2,10 @@ function capitalize(string) {
   return string.charAt(0).toUpperCase() + string.substring(1);
 }
 
-function setDetails() {
+function setMainDetails() {
   localStorage.setItem("my-name", "Sanidh Varghese");
 
-  let aboutMe = 
-          `I am a junior software developer currently working at Polus Solutions
+  let aboutMe = `I am a junior software developer currently working at Polus Solutions
           in Trivandrum, Kerala. I pursued my higher education in B.Tech in
           Computer Science from Mar Baselios College in Trivandum. I also did my
           major schooling in 10th and 12th from St. Thomas Central School from
@@ -20,11 +19,11 @@ function setDetails() {
           <br /><br />
           I like participating in hackathons & quizzes. I also like reading
           audiobooks.`;
-  // console.log('aboutMe: ', aboutMe);  
+  // console.log('aboutMe: ', aboutMe);
   localStorage.setItem("about-me", aboutMe);
-};
+}
 
-function getDetails() {
+function getMainDetails() {
   let user = localStorage.getItem("current-user");
   document.getElementById("current-user").innerHTML =
     "Hi " + capitalize(user) + "👋 !";
@@ -36,9 +35,8 @@ function getDetails() {
   document.getElementById("about-content").innerHTML = aboutMe;
 }
 
-
 window.onload = function runOnStart() {
-  setDetails();
+  setMainDetails();
 
-  getDetails();
+  getMainDetails();
 };
