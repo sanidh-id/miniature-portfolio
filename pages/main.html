@@ -4,23 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
     <header role="banner">
       <div
         class="animation text"
         tabindex="0"
-        style="font-family: fantasy"
-        id="name"
-        title="name"
+        style="font-family: fantasy; font-weight: bold; font-size: 2.5em"
+        id="my-name"
+        title="my-name"
       >
-        Sanidh Idicula <span aria-hidden="true">🌴🥥</span> Varghese
+        Sanidh Idicula Varghese
       </div>
-      <!-- <div class="animation shadow">Sanidh Idicula 🌴🥥 Varghese</div> -->
+      <!-- <div class="animation shadow">Sanidh Idicula Varghese</div> -->
       <nav role="navigation">
-        <ul role="menubar" tabindex="0" aria-expanded="true">
-          <li>
+        <ul role="menubar" tabindex="0" aria-expanded="true" id="nav-bar">
+          <li id="about-link">
             <a
               href="#about"
               aria-label="about"
@@ -30,7 +30,7 @@
               >About Me</a
             >
           </li>
-          <li>
+          <li id="skills-link">
             <a
               href="#skills"
               aria-label="software skills"
@@ -40,7 +40,7 @@
               >Software Skills</a
             >
           </li>
-          <li>
+          <li id="projects-link">
             <a
               href="projects.html"
               aria-label="projects"
@@ -50,7 +50,7 @@
               >Projects</a
             >
           </li>
-          <li>
+          <li id="contact-link">
             <a
               href="contact.html"
               aria-label="contact"
@@ -62,12 +62,21 @@
           </li>
         </ul>
       </nav>
+      <a
+        href="login.html"
+        aria-label="logout"
+        id="logout-link"
+        title="logout-link"
+        tabindex="0"
+        ><img src="../assets/logout-grey.png" alt="Log Out"
+      /></a>
     </header>
 
     <main role="main">
+      <span class="user-heading" id="current-user">Hi</span>
       <section id="about" role="about">
-        <h2 tabindex="0" id="about" title="about">About Me</h2>
-        <p tabindex="0">
+        <h2 tabindex="0" id="about-header" title="about-header">About Me</h2>
+        <p tabindex="0" id="about-content">
           I am a junior software developer currently working at Polus Solutions
           in Trivandrum, Kerala. I pursued my higher education in B.Tech in
           Computer Science from Mar Baselios College in Trivandum. I also did my
@@ -86,21 +95,23 @@
       </section>
 
       <section id="skills" role="skills">
-        <h2 tabindex="0" id="skills" title="skills">Software Skills</h2>
-        <ul class="skills" tabindex="0" aria-expanded="true">
-          <li><img src="assets/c.png" alt="C" aria-label="C" /></li>
-          <li>
-            <img src="assets/python.png" alt="Python" aria-label="Python" />
+        <h2 tabindex="0" id="skills-header" title="skills-header">
+          Software Skills
+        </h2>
+        <ul class="skills" tabindex="0" aria-expanded="true" id="skills-list">
+          <li id="c"><img src="../assets/c.png" alt="C" id="c-img" /></li>
+          <li id="python">
+            <img src="../assets/python.png" alt="Python" id="python-img" />
           </li>
-          <li>
-            <img src="assets/js.png" alt="JavaScript" aria-label="JavaScript" />
+          <li id="javascript">
+            <img src="../assets/js.png" alt="JavaScript" id="javascript-img" />
           </li>
-          <li>
+          <li id="sql">
             <img
-              style="width: 100px"
-              src="assets/sql-cut.png"
+              style="width: 120px; height: 56px"
+              src="../assets/sql-cut.png"
               alt="SQL"
-              aria-label="SQL"
+              id="sql-img"
             />
           </li>
           <!-- Add more skills -->
@@ -111,4 +122,6 @@
       <p>&copy; 2024 San1dh</p>
     </footer>
   </body>
+  <script src="../javascript/checkLogin.js"></script>
+  <script src="../javascript/main.js"></script>
 </html>

@@ -4,23 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Page</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
     <header role="banner">
       <div
         class="animation text"
         tabindex="0"
-        style="font-family: fantasy"
-        id="name"
-        title="name"
+        style="font-family: fantasy; font-weight: bold; font-size: 2.5em"
+        id="my-name"
+        title="my-name"
       >
-        Sanidh Idicula <span aria-hidden="true">🌴🥥</span> Varghese
+        Sanidh Idicula Varghese
       </div>
-      <!-- <div class="animation shadow">Sanidh Idicula 🌴🥥 Varghese</div> -->
+      <!-- <div class="animation shadow">Sanidh Idicula Varghese</div> -->
       <nav role="navigation">
-        <ul role="menubar" tabindex="0" aria-expanded="true">
-          <li>
+        <ul role="menubar" tabindex="0" aria-expanded="true" id="nav-bar">
+          <li id="about-link">
             <a
               href="main.html#about"
               aria-label="about"
@@ -30,7 +30,7 @@
               >About Me</a
             >
           </li>
-          <li>
+          <li id="skills-link">
             <a
               href="main.html#skills"
               aria-label="software skills"
@@ -40,7 +40,7 @@
               >Software Skills</a
             >
           </li>
-          <li>
+          <li id="projects-link">
             <a
               href="projects.html"
               aria-label="projects"
@@ -50,7 +50,7 @@
               >Projects</a
             >
           </li>
-          <li>
+          <li id="contact-link">
             <a
               href="#"
               aria-label="contact"
@@ -62,6 +62,14 @@
           </li>
         </ul>
       </nav>
+      <a
+        href="login.html"
+        aria-label="logout"
+        id="logout-link"
+        title="logout-link"
+        tabindex="0"
+        ><img src="../assets/logout-grey.png" alt="Log Out"
+      /></a>
     </header>
 
     <main role="main">
@@ -69,12 +77,12 @@
         >Go Back Home</a
       > -->
       <section id="contact" role="contact">
-        <h2 tabindex="0" id="contact" title="contact">Contact</h2>
-        <p tabindex="0">Email: san1dh@proton.me</p>
-        <p tabindex="0">Phone: +91 123 456 7890</p>
+        <h2 tabindex="0" id="contact-header" title="contact-header">Contact</h2>
+        <p tabindex="0" id="my-email">Email: san1dh@proton.me</p>
+        <p tabindex="0" id="my-phone">Phone: +91 123 456 7890</p>
         <!-- Add more contact information -->
         <form action="" id="myForm">
-          <h4 tabindex="0">Send a Message</h4>
+          <h4 tabindex="0" id="form-title">Send a Message</h4>
           <input
             type="text"
             name="name"
@@ -118,24 +126,7 @@
     <footer role="contentinfo" tabindex="0">
       <p>&copy; San1dh 2024</p>
     </footer>
-
-    <script>
-      function submitForm() {
-        // Retrieve input values
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var message = document.getElementById("message").value;
-
-        // Construct message to display
-        var alertMessage = "Name: " + name + "\n";
-        alertMessage += "Email: " + email + "\n";
-        alertMessage += "Message: " + message;
-
-        // Display message in alert
-        alert(alertMessage);
-
-        document.getElementById("myForm").reset();
-      }
-    </script>
+    <script src="../javascript/checkLogin.js"></script>
+    <script src="../javascript/contact.js"></script>
   </body>
 </html>

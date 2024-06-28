@@ -4,23 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects Page</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
     <header role="banner">
       <div
         class="animation text"
         tabindex="0"
-        style="font-family: fantasy"
-        id="name"
-        title="name"
+        style="font-family: fantasy; font-weight: bold; font-size: 2.5em"
+        id="my-name"
+        title="my-name"
       >
-        Sanidh Idicula <span aria-hidden="true">🌴🥥</span> Varghese
+        Sanidh Idicula Varghese
       </div>
-      <!-- <div class="animation shadow">Sanidh Idicula 🌴🥥 Varghese</div> -->
+      <!-- <div class="animation shadow">Sanidh Idicula Varghese</div> -->
       <nav role="navigation">
-        <ul role="menubar" tabindex="0" aria-expanded="true">
-          <li>
+        <ul role="menubar" tabindex="0" aria-expanded="true" id="nav-bar">
+          <li id="about-link">
             <a
               href="main.html#about"
               aria-label="about"
@@ -30,7 +30,7 @@
               >About Me</a
             >
           </li>
-          <li>
+          <li id="skills-link">
             <a
               href="main.html#skills"
               aria-label="software skills"
@@ -40,7 +40,7 @@
               >Software Skills</a
             >
           </li>
-          <li>
+          <li id="projects-link">
             <a
               href="#"
               aria-label="projects"
@@ -50,7 +50,7 @@
               >Projects</a
             >
           </li>
-          <li>
+          <li id="contact-link">
             <a
               href="contact.html"
               aria-label="contact"
@@ -62,6 +62,14 @@
           </li>
         </ul>
       </nav>
+      <a
+        href="login.html"
+        aria-label="logout"
+        id="logout-link"
+        title="logout-link"
+        tabindex="0"
+        ><img src="../assets/logout-grey.png" alt="Log Out"
+      /></a>
     </header>
 
     <main role="main">
@@ -70,27 +78,29 @@
       > -->
       <section id="projects" role="projects">
         <h2 tabindex="0" id="projects" title="projects">Projects</h2>
-        <div class="project">
-          <h3 tabindex="0">Employee Assessment Web App</h3>
-          <p tabindex="0">
+        <div class="project" id="projects">
+          <h3 tabindex="0" id="project-1-title">Employee Assessment Web App</h3>
+          <p tabindex="0" id="project-1-body">
             A prototype I created with a team for an internship at Nissan
             Digital based on an excel sheet of questions for each department.
             Users can enter once and answer questions about themselves & get a
             score. Supervisors can verify it. An admin can manage all details.
           </p>
-          <p tabindex="0">
+          <p tabindex="0" id="project-1-tech">
             <b>Technologies Used:</b> HTML, CSS, JavaScript, React, Express.js,
             MySQL
           </p>
           <br />
-          <h3 tabindex="0">Collevo: College Activity Points Management App</h3>
-          <p tabindex="0">
+          <h3 tabindex="0" id="project-2-title">
+            Collevo: College Activity Points Management App
+          </h3>
+          <p tabindex="0" id="project-2-body">
             A web & mobile application for teachers & students so students can
             easily upload certificates for college activities & teachers can
             easily verify and award points. An admin can upload all the details
             for teachers & students.
           </p>
-          <p tabindex="0">
+          <p tabindex="0" id="project-1-tech">
             <b>Technologies Used:</b> Flutter, Firebase, Python
           </p>
         </div>
@@ -102,4 +112,6 @@
       <p>&copy; 2024 San1dh</p>
     </footer>
   </body>
+  <script src="../javascript/checkLogin.js"></script>
+  <script src="../javascript/projects.js"></script>
 </html>
