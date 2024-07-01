@@ -68,7 +68,7 @@ body {
 /* Header styling */
 header {
   align-items: center;
-  background-color: #4F0E0E;
+  background-color: #333644;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
   color: #fff;
   display: flex;
@@ -120,8 +120,8 @@ nav ul li a:hover { text-decoration: underline; }
 
 /* Main content styling */
 main {
-  background-color: #BB8760; /* Semi-transparent black background */
-  color: #FFDADA;
+  background-color: #84577C; /* Semi-transparent black background */
+  color: #480032;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
   margin: 20px;
@@ -137,14 +137,14 @@ section {
 }
 
 h2 {
-  color: #FFDADA;
+  color: #480032;
   font-size: 2rem;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .project {
-  background-color: #333; /* Dark gray background */
+  background-color: #DF0054; /* Dark gray background */
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
@@ -152,14 +152,14 @@ h2 {
 }
 
 .project h3 {
-  color: #fff;
+  color: #480032;
   font-size: 1.6rem;
   margin-bottom: 10px;
 }
 
-.project p { color: #ccc; }
+.project p { color: #FF8B6A; }
 
-b { color: rgb(150, 105, 105); }
+b { color: #FFD2BB; }
 
 img {
   height: 60px; /* Fix missing units */
