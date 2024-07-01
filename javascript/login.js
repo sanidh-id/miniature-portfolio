@@ -1,9 +1,9 @@
 window.onload = function setData() {
   // window.localStorage.setItem("name", "sanidh");
   // window.localStorage.setItem("password", "1234");
-  // console.log('localStorage-name: 'window.localStorage.getItem("name"));
+  // console.log('localStorage-name: ', window.localStorage.getItem("name"));
 
-  var users = [
+  const users = [
     ["abin", "5678"],
     ["sanidh", "1234"],
   ];
@@ -14,7 +14,7 @@ function check(form) {
   let flag = "false";
 
   const userData = JSON.parse(localStorage.getItem("users"));
-  console.log('localStorage-userData: ', userData);
+  // console.log('localStorage-userData: ', userData);
 
   if (form.user.value === "" || form.password.value === "") {
     alert("Please enter a valid username/password 🙏");

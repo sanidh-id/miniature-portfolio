@@ -68,12 +68,12 @@ body {
 /* Header styling */
 header {
   align-items: center;
-  background-color: #333;
+  background-color: #333644;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
   color: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 30px 40px;
+  padding: 40px 40px 20px 40px;
   margin-top: -40px;
   margin-left: 0;
   /* position: relative;  */
@@ -110,22 +110,23 @@ nav ul li a {
 nav ul li a:hover { text-decoration: underline; }
 
 .user-heading { 
-  background-color: white;
-  /* border: 2px solid whitesmoke; */
+  /* background-color: white; */
+  border: 2px dashed whitesmoke;
   border-radius: 10px;
-  color: black;
+  color: FFDADA;
   font-size: 2em;
   padding: 10px;
 }
 
 /* Main content styling */
 main {
-  background-color: rgba(32, 32, 32, .9); /* Semi-transparent black background */
+  background-color: #84577C; /* Semi-transparent black background */
+  color: #480032;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
   margin: 20px;
   /* margin-top: 20px;  */
-  padding: 90px 40px;
+  padding: 100px 40px 20px 40px;
   position: relative;
   z-index: 900; /* Ensure main content is above background */
 }
@@ -136,13 +137,14 @@ section {
 }
 
 h2 {
-  color: #fff;
+  color: #480032;
   font-size: 2rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .project {
-  background-color: #333; /* Dark gray background */
+  background-color: #DF0054; /* Dark gray background */
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
@@ -150,14 +152,16 @@ h2 {
 }
 
 .project h3 {
-  color: #fff;
+  color: #480032;
   font-size: 1.6rem;
   margin-bottom: 10px;
 }
 
-.project p { color: #ccc; }
+.project p { color: #FF8B6A; }
 
-b { color: rgb(150, 105, 105); }
+.project b { color: #FFD2BB; }
+
+.project span { color: #FF8B6A; }
 
 img {
   height: 60px; /* Fix missing units */
@@ -168,10 +172,14 @@ img {
   display: flex;
   flex-direction: row;
   list-style: none;
-  margin: 20px;
+  /* margin: 0; */
+  justify-content: center;
 }
 
-.skills li { padding: 10px; }
+.skills li { 
+  padding: 10px; 
+  margin: 5px;
+}
 
 /* Footer styling */
 footer {
@@ -183,11 +191,39 @@ footer {
   text-align: center;
 }
 
+#main-contact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#contact{
+  border: 2px solid white;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 50%;
+}
+
+.contact-side1{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.addimage img {
+  height: 100%;
+  width: 95%;
+  border-radius: 40px;
+  margin: 30px;
+}
+
 form {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  max-width: 40%;
 }
 
 input { margin: 4px; }
