@@ -68,7 +68,7 @@ body {
 /* Header styling */
 header {
   align-items: center;
-  background-color: #333;
+  background-color: #4F0E0E;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
   color: #fff;
   display: flex;
@@ -113,14 +113,15 @@ nav ul li a:hover { text-decoration: underline; }
   /* background-color: white; */
   border: 2px dashed whitesmoke;
   border-radius: 10px;
-  color: white;
+  color: FFDADA;
   font-size: 2em;
   padding: 10px;
 }
 
 /* Main content styling */
 main {
-  background-color: rgba(32, 32, 32, .9); /* Semi-transparent black background */
+  background-color: #BB8760; /* Semi-transparent black background */
+  color: #FFDADA;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
   margin: 20px;
@@ -136,7 +137,7 @@ section {
 }
 
 h2 {
-  color: #fff;
+  color: #FFDADA;
   font-size: 2rem;
   margin-bottom: 20px;
   text-align: center;
