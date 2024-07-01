@@ -5,7 +5,7 @@ function capitalize(string) {
 function setMainDetails() {
   localStorage.setItem("my-name", "Sanidh Varghese");
 
-  let aboutMe = `I am a junior software developer currently working at Polus Solutions
+  const aboutMe = `I am a junior software developer currently working at Polus Solutions
           in Trivandrum, Kerala. I pursued my higher education in B.Tech in
           Computer Science from Mar Baselios College in Trivandum. I also did my
           major schooling in 10th and 12th from St. Thomas Central School from
@@ -24,14 +24,14 @@ function setMainDetails() {
 }
 
 function getMainDetails() {
-  let user = localStorage.getItem("current-user");
+  const user = localStorage.getItem("current-user");
   document.getElementById("current-user").innerHTML =
     "Hi " + capitalize(user) + "👋 !";
 
-  let myName = localStorage.getItem("my-name");
+  const myName = localStorage.getItem("my-name");
   document.getElementById("my-name").innerHTML = myName;
 
-  let aboutMe = localStorage.getItem("about-me");
+  const aboutMe = localStorage.getItem("about-me");
   document.getElementById("about-content").innerHTML = aboutMe;
 }
 

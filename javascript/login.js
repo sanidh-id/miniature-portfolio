@@ -3,7 +3,7 @@ window.onload = function setData() {
   // window.localStorage.setItem("password", "1234");
   // console.log('localStorage-name: ', window.localStorage.getItem("name"));
 
-  var users = [
+  const users = [
     ["abin", "5678"],
     ["sanidh", "1234"],
   ];
