@@ -159,7 +159,9 @@ h2 {
 
 .project p { color: #FF8B6A; }
 
-b { color: #FFD2BB; }
+.project b { color: #FFD2BB; }
+
+.project span { color: #FF8B6A; }
 
 img {
   height: 60px; /* Fix missing units */

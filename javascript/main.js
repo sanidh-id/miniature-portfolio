@@ -35,7 +35,7 @@ function getMainDetails() {
   document.getElementById("about-content").innerHTML = aboutMe;
 }
 
-window.onload = function runOnStart() {
+window.onload = function runOnMain() {
   setMainDetails();
 
   getMainDetails();

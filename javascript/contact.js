@@ -20,7 +20,7 @@ function submitForm() {
   document.getElementById("myForm").reset();
 }
 
-window.onload = function getContactDetails() {
+window.onload = function runOnContact() {
   let myName = localStorage.getItem("my-name");
   document.getElementById("my-name").innerHTML = myName;
 }
