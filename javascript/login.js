@@ -35,7 +35,7 @@ function check(form) {
     }
   }
   if (flag === false) {
-    alert("Incorrect 👎, try again");
+    alert("Incorrect 👎, please try again");
     // return false;
   }
 }
