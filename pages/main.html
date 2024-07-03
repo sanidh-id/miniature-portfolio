@@ -1,123 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="../styles/style.css" />
-  </head>
-  <body>
-    <header role="banner">
-      <div
-        class="animation text"
-        tabindex="0"
-        style="font-family: fantasy; font-weight: bold; font-size: 2.5em"
-        id="my-name"
-        title="my-name"
-      ></div>
-      <!-- <div class="animation shadow">Sanidh Idicula Varghese</div> -->
-      <nav role="navigation">
-        <ul role="menubar" tabindex="0" aria-expanded="true" id="nav-bar">
-          <li id="about-link">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link
+            rel="stylesheet"
+            href="
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+    </head>
+    <body>
+        <header role="banner">
+            <div
+                class="animation text"
+                tabindex="0"
+                style="
+                    font-family: fantasy;
+                    font-weight: bold;
+                    font-size: 2.5em;
+                "
+                id="my-name"
+                title="my-name"
+            ></div>
+            <!-- <div class="animation shadow">Sanidh Idicula Varghese</div> -->
+            <nav role="navigation">
+                <ul
+                    role="menubar"
+                    tabindex="0"
+                    aria-expanded="true"
+                    id="nav-bar"
+                >
+                    <li id="about-link">
+                        <a
+                            href="#about"
+                            aria-label="about"
+                            id="about-link"
+                            title="about-link"
+                            tabindex="0"
+                            >About Me</a
+                        >
+                    </li>
+                    <li id="skills-link">
+                        <a
+                            href="#skills"
+                            aria-label="software skills"
+                            id="skills-link"
+                            title="skills-link"
+                            tabindex="0"
+                            >Software Skills</a
+                        >
+                    </li>
+                    <li id="projects-link">
+                        <a
+                            href="projects.html"
+                            aria-label="projects"
+                            id="projects-link"
+                            title="projects-link"
+                            tabindex="0"
+                            >Projects</a
+                        >
+                    </li>
+                    <li id="contact-link">
+                        <a
+                            href="contact.html"
+                            aria-label="contact"
+                            id="contact-link"
+                            title="contact-link"
+                            tabindex="0"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+            </nav>
             <a
-              href="#about"
-              aria-label="about"
-              id="about-link"
-              title="about-link"
-              tabindex="0"
-              >About Me</a
-            >
-          </li>
-          <li id="skills-link">
-            <a
-              href="#skills"
-              aria-label="software skills"
-              id="skills-link"
-              title="skills-link"
-              tabindex="0"
-              >Software Skills</a
-            >
-          </li>
-          <li id="projects-link">
-            <a
-              href="projects.html"
-              aria-label="projects"
-              id="projects-link"
-              title="projects-link"
-              tabindex="0"
-              >Projects</a
-            >
-          </li>
-          <li id="contact-link">
-            <a
-              href="contact.html"
-              aria-label="contact"
-              id="contact-link"
-              title="contact-link"
-              tabindex="0"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <a
-        href="login.html"
-        aria-label="logout"
-        id="logout-link"
-        title="logout-link"
-        tabindex="0"
-        ><img src="../assets/logout-grey.png" alt="Log Out"
-      /></a>
-    </header>
+                href="login.html"
+                aria-label="logout"
+                id="logout-link"
+                title="logout-link"
+                tabindex="0"
+                ><i class="fa-solid fa-right-from-bracket"></i
+            ></a>
+        </header>
 
-    <main role="main">
-      <span class="user-heading" id="current-user">Hi</span>
-      <section id="about" role="about">
-        <h2 tabindex="0" id="about-header" title="about-header">About Me</h2>
-        <p tabindex="0" id="about-content"></p>
-      </section>
+        <main role="main">
+            <span class="user-heading" id="current-user">Hi</span>
+            <section id="about" role="about">
+                <h2 tabindex="0" id="about-header" title="about-header">
+                    About Me
+                </h2>
+                <p tabindex="0" id="about-content"></p>
+            </section>
 
-      <section id="skills" role="skills">
-        <h2 tabindex="0" id="skills-header" title="skills-header">
-          Software Skills
-        </h2>
-        <ul class="skills" tabindex="0" aria-expanded="true" id="skills-list">
-          <li id="c">
-            <img
-              style="
-                width: 80px;
-                height: 80px;
-                position: relative;
-                top: -10px;
-                left: 20px;
-              "
-              src="../assets/c.png"
-              alt="C"
-              id="c-img"
-            />
-          </li>
-          <li id="python">
-            <img src="../assets/python.png" alt="Python" id="python-img" />
-          </li>
-          <li id="javascript">
-            <img src="../assets/js.png" alt="JavaScript" id="javascript-img" />
-          </li>
-          <li id="sql">
-            <img
-              style="width: 120px; height: 56px"
-              src="../assets/sql-cut.png"
-              alt="SQL"
-              id="sql-img"
-            />
-          </li>
-          <!-- Add more skills -->
-        </ul>
-      </section>
-    </main>
-    <footer role="contentinfo" tabindex="0">
-      <p>&copy; 2024 San1dh</p>
-    </footer>
-  </body>
-  <script src="../javascript/checkLogin.js"></script>
-  <script src="../javascript/main.js"></script>
+            <section id="skills" role="skills">
+                <h2 tabindex="0" id="skills-header" title="skills-header">
+                    Software Skills
+                </h2>
+                <ul
+                    class="skills"
+                    tabindex="0"
+                    aria-expanded="true"
+                    id="skills-list"
+                >
+                    <li id="c">
+                        <img
+                            style="
+                                width: 80px;
+                                height: 80px;
+                                position: relative;
+                                top: -10px;
+                                left: 20px;
+                            "
+                            src="../assets/c.png"
+                            alt="C"
+                            id="c-img"
+                        />
+                    </li>
+                    <li id="python">
+                        <img
+                            src="../assets/python.png"
+                            alt="Python"
+                            id="python-img"
+                        />
+                    </li>
+                    <li id="javascript">
+                        <img
+                            src="../assets/js.png"
+                            alt="JavaScript"
+                            id="javascript-img"
+                        />
+                    </li>
+                    <li id="sql">
+                        <img
+                            style="width: 120px; height: 56px"
+                            src="../assets/sql-cut.png"
+                            alt="SQL"
+                            id="sql-img"
+                        />
+                    </li>
+                    <!-- Add more skills -->
+                </ul>
+            </section>
+        </main>
+        <footer role="contentinfo" tabindex="0">
+            <p>&copy; 2024 San1dh</p>
+        </footer>
+    </body>
+    <script src="../javascript/checkLogin.js"></script>
+    <script src="../javascript/main.js"></script>
 </html>
